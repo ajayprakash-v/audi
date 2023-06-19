@@ -1,0 +1,662 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+	src: url('fonts/f1.ttf');
+	font-family: f1;
+}
+@font-face{
+	src: url('fonts/f2.ttf');
+	font-family: f2;
+}
+h1{
+	font-family: f2;
+}
+h2{
+	font-family: f1;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#logo{
+	width: 5vw;
+}
+.nav-item a{
+	font-family: f1;
+	font-size: 1.5vw;
+	color: black;
+}
+#sec1{
+	width: 100%;
+	height: 45.5vw;
+	overflow: hidden;
+	background-color: white;
+}
+#img1{
+	position: relative;
+}
+#img1 img{
+	width: 100vw;
+}
+#img1 h1{
+	position: absolute;
+	top: 25%;
+	left: 0;
+	color: white;
+	z-index: 1;
+	font-size: 5vw;
+}
+#box div:nth-child(1){
+	position: absolute;
+	top: 0%;
+	left: 0;
+	width: 25%;
+	height:0px;
+	background-color: white;
+	z-index: 1;
+	animation: up 1s ;
+}
+#box div:nth-child(2){
+	position: absolute;
+	top: 0%;
+	left: 25%;
+	width: 25%;
+	height: 0px;
+	background-color: white;
+	z-index: 1;
+	animation: up 1.5s ;
+}
+#box div:nth-child(3){
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	width: 25%;
+	height: 0px;
+	background-color: white;
+	z-index: 1;
+	animation: up 2s ;
+}
+#box div:nth-child(4){
+	position: absolute;
+	top: 0%;
+	left: 75%;
+	width: 25%;
+	height: 0px;
+	background-color: white;
+	z-index: 1;
+	animation: up 2.5s ;
+}
+#box div:nth-child(5){
+	position: absolute;
+	top: 26%;
+	left: 0%;
+	width: 0%;
+	height: 8%;
+	background-color: white;
+	z-index: 1;
+	animation: left 5s;
+}
+
+@keyframes up{
+	0%{
+		width: 25%;
+		height: 45.5vw;	
+	}
+	100%{
+		width: 25%;
+		height: 0px;
+	}
+}
+@keyframes left{
+	0%{
+		width: 26%;	
+	}
+	100%{
+		width: 0%;
+	}		
+}
+#sec2{
+	width: 100%;
+	height: 45.5vw;
+	background-color: #eaeaea;
+	position: relative;
+}
+#sec2 h1{
+	font-size: 4vw;
+	position: absolute;
+	opacity: .5;
+	bottom: 0;
+	right: 10%;
+
+}
+#pure h2{
+	font-size: 5vw;
+	padding-bottom: 2vw;
+}
+#img2 img{
+	margin-top: 10vw;
+	width:25vw;
+	padding-bottom: 3vw;
+}
+table tr th{
+	padding-right: 5vw;
+	font-size: 1.2vw;
+}
+table tr th:nth-child(1){
+	opacity: .5;
+}
+#pure{
+	background-color: white;
+	width: 50vw;
+	padding-left: 3vw;
+}
+#img3 img{
+	width: 10vw;
+	margin-bottom: 2vw;
+}
+#text2 h2{
+	font-size: 1vw;
+	opacity: .5;
+	margin-bottom: 2.5vw;
+}
+#text2{
+	width: 30vw;
+	height: 20vw;
+}
+#text2 h2:nth-child(2){
+	padding-top: 5vw;
+}
+#img2{
+	position: relative;
+	overflow: hidden;
+}
+#img2 div:nth-child(1){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	top: 10vw;
+	width: 10vw;
+	height: 14vw;
+	opacity: 0;
+}
+.moveup1{
+	animation: moveup1 3s;
+}
+.moveup2{
+	animation: moveup1 4s;
+}
+.moveup3{
+	animation: moveup1 5s;
+}
+.moveup4{
+	animation: moveup1 6s;
+}
+#img2 div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	top: 10vw;
+	left: 10vw;
+	width: 10vw;
+	height: 14vw;
+	opacity: 0;
+}
+#img2 div:nth-child(3){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	top: 10vw;
+	left: 20vw;
+	width: 5vw;
+	height: 14vw;
+	opacity: 0;
+}
+#img3{
+	position: relative;
+}
+#img3 div:nth-child(1){
+	position: absolute;
+	width: 5vw;
+	height: 16vw;
+	background-color: white;
+	z-index: 1;
+	opacity: 0;
+}
+#img3 div:nth-child(2){
+	position: absolute;
+	width: 5vw;
+	height: 16vw;
+	left: 5vw;
+	background-color: white;
+	z-index: 1;
+	opacity: 0;
+}
+
+#img3{
+	overflow: hidden;
+}
+
+@keyframes moveup1{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(-50vw);
+	}		
+}
+#sec3{
+	width: 100%;
+	height: 45.5vw;
+}
+.moveleft{
+	animation: moveleft 2s ;
+}
+@keyframes moveleft{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(20vw);
+	}
+}
+#pure{
+	position: relative;
+}
+#pure div:nth-child(1){
+	position: absolute;
+	width: 20vw;
+	top: 2vw;
+	height: 3vw;
+	background-color: white;
+	opacity: 0;
+}
+@keyframes scaledown{
+	0%{
+		scale: 1.5;
+	}
+	50%{
+		scale: 1;
+	}
+	100%{
+		scale: 1.5;	
+	}
+}
+#img4 img{
+	width: 30vw;
+	scale: 1.5;
+	transition: 1s;
+	animation: scaledown 5s infinite;
+}
+#img5 img{
+	width: 15vw;
+	scale: 1.5;
+	transition: 1s;
+	animation: scaledown 8s infinite;
+}
+
+#img6 img{
+	width: 30vw;
+	scale: 1.5;
+	animation: scaledown 10s infinite;
+}
+#sec3 h2{
+	font-size: 1.5vw;
+}
+.row{
+	height: 100%;
+}
+#img4,#img5,#img6{
+	position: relative;
+	overflow: hidden;
+}
+#img4 div:nth-child(1){
+	background-color:white;
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img4 div:nth-child(2){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 25%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img4 div:nth-child(3){
+	background-color:white;
+	width: 25%;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img4 div:nth-child(4){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img5 div:nth-child(1){
+	background-color:white;
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img5 div:nth-child(2){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 25%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img5 div:nth-child(3){
+	background-color:white;
+	width: 25%;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img5 div:nth-child(4){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img6 div:nth-child(1){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img6 div:nth-child(2){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 25%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img6 div:nth-child(3){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#img6 div:nth-child(4){
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	left: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+#sec4{
+	width: 100%;
+	height: 100%;
+}
+#sec4 h2{
+	font-size: 2vw;
+}
+#part1{
+	width: 100%;
+	height: 40%;
+	position: relative;
+}
+#part1 h1{
+	font-size: 5vw;
+	margin-bottom: 3vw;
+}
+.line{
+	animation: shadow 2s;
+}
+@keyframes shadow{
+	50%{
+		box-shadow: inset -100vw 0px black;
+		color: white;
+	}
+	100%{
+		box-shadow: inset 0vw 0px red;	
+	}
+}
+
+#part1 p{
+	font-size: .9vw;
+	opacity: .5;
+}
+#part2 {
+	position: relative;
+	width: 100%;
+	height: 35vw;
+	overflow: hidden;
+	background-color: black;
+}
+#part2 img{
+	width: 100%;
+	scale: 1.2;
+}
+
+#part2 div:nth-child(1){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	opacity: 0;
+}
+#part2 div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	left: 35%;
+	opacity: 0;
+}
+#part2 div:nth-child(3){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 30%;
+	height: 100%;
+	left: 70%;
+	opacity: 0;
+}
+#sec5{
+	width: 100%;
+	height: 100%;
+	margin-top: 3vw;
+}
+#air img{
+	width: 30vw;
+}
+#air h2{
+	font-weight: bold;
+	font-size: 2vw;
+}
+#air p{
+	font-size: 1vw;
+	opacity: .5;
+	margin-left: 4.3vw;
+}
+#air a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid;
+	border-radius: 30px;
+	width: 10vw;
+	text-align: center;
+	font-size: 1vw;
+}
+#dream img{
+	width: 30vw;
+}
+#dream h2{
+	font-weight: bold;
+	font-size: 2vw;
+}
+#dream p{
+	font-size: 1vw;
+	opacity: .5;
+	margin-left: 4.3vw;
+}
+#dream a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid;
+	border-radius: 30px;
+	width: 10vw;
+	text-align: center;
+	font-size: 1vw;
+}
+#ground img{
+	width: 30vw;
+}
+#ground h2{
+	font-weight: bold;
+	font-size: 2vw;
+}
+#ground p{
+	font-size: 1vw;
+	opacity: .5;
+	margin-left: 4.3vw;
+}
+#ground a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid;
+	border-radius: 30px;
+	width: 10vw;
+	text-align: center;
+	font-size: 1vw;
+}
+#last{
+	margin-top: 5vw;
+	margin-bottom: 3vw;
+}
+#last h2:nth-child(1){
+	margin-bottom: 10vw;
+}
+#last h2{
+	font-size: 2vw;
+	font-weight: bold;
+}
+#last input{
+	width: 25vw;
+	border-radius: 10px;
+}
+#last p{
+	font-size: 1vw;
+	opacity: .5;
+	margin-bottom: 7vw;
+}
+
+#img20,#img21,#img22{
+	position: relative;
+	overflow: hidden;
+}
+#img20 div:nth-child(1){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	opacity: 0;
+}
+#img20 div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	left: 35%;
+	opacity: 0;
+}
+#img20 div:nth-child(3){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	opacity: 0;
+	height: 100%;
+	left: 70%;
+}
+#img21 div:nth-child(1){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	opacity: 0;
+}
+#img21 div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	left: 35%;
+	opacity: 0;
+}
+#img21 div:nth-child(3){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	opacity: 0;
+	height: 100%;
+	left: 70%;
+}
+#img22 div:nth-child(1){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	opacity: 0;
+}
+#img22 div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+	left: 35%;
+	opacity: 0;
+}
+#img22 div:nth-child(3){
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 35%;
+	opacity: 0;
+	height: 100%;
+	left: 70%;
+}
